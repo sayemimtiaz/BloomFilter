@@ -6,7 +6,6 @@ import java.nio.file.Paths;
 import java.time.Duration;
 import java.time.Instant;
 import java.util.ArrayList;
-import static java.util.Arrays.sort;
 import java.util.Iterator;
 import java.util.List;
 import java.util.Random;
@@ -14,7 +13,7 @@ import java.util.stream.Stream;
 
 public class EmpiricalComparision {
 	//selects a particular key from GRAM_FILE with 1/10000 probability to use as an key
-	Pair queryKeySelectionProbabilityRange=  new Pair(1,100000);
+	Pair queryKeySelectionProbability =  new Pair(1,100000);
 
 	BaseDifferential [] differentials;
 	int numDifferentials = 5;
@@ -65,8 +64,8 @@ public class EmpiricalComparision {
 
 			while(iterator.hasNext())
 			{
-				int randomNum=random.nextInt(queryKeySelectionProbabilityRange.second) +1;
-				if(randomNum<=this.queryKeySelectionProbabilityRange.first)
+				int randomNum=random.nextInt(queryKeySelectionProbability.second) +1;
+				if(randomNum<=this.queryKeySelectionProbability.first)
 				{
 					list.add(iterator.next());
 				}
