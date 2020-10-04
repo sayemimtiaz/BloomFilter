@@ -24,3 +24,15 @@ enum BloomFilterType
     RANDOM,
     MULTI
 }
+
+class Pair
+{
+    public Integer first;
+    public Integer second;
+
+    Pair(Integer f, Integer s)
+    {
+        first=f;
+        second=s;
+    }
+}

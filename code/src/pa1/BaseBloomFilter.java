@@ -39,8 +39,6 @@ public class BaseBloomFilter {
         hashGenerator.init(s);
         for (int k = 0; k < numHashes; k++) {
             int index = (int) (hashGenerator.getHash(k) % filterSize); //sine filterSize is int, index will fit in int
-            if(index<0)
-                hashGenerator.getHash(k);
             filter[k%numberofFilters].set(index, true);
         }
     }

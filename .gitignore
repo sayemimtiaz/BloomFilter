@@ -3,4 +3,4 @@ code/data/
 *.DS_Store
 *.idea
 *.iml
-bin/
+*bin/

@@ -1,7 +1,5 @@
 package pa1;
 
-import javafx.util.Pair;
-
 import java.io.IOException;
 import java.nio.file.Files;
 import java.nio.file.Paths;
@@ -16,7 +14,7 @@ import java.util.stream.Stream;
 
 public class EmpiricalComparision {
 	//selects a particular key from GRAM_FILE with 1/10000 probability to use as an key
-	Pair<Integer, Integer> queryKeySelectionProbabilityRange=  new Pair<>(1,10000);
+	Pair queryKeySelectionProbabilityRange=  new Pair(1,100000);
 
 	BaseDifferential [] differentials;
 	int numDifferentials = 5;
@@ -67,8 +65,8 @@ public class EmpiricalComparision {
 
 			while(iterator.hasNext())
 			{
-				int randomNum=random.nextInt(queryKeySelectionProbabilityRange.getValue()) +1;
-				if(randomNum<=this.queryKeySelectionProbabilityRange.getKey())
+				int randomNum=random.nextInt(queryKeySelectionProbabilityRange.second) +1;
+				if(randomNum<=this.queryKeySelectionProbabilityRange.first)
 				{
 					list.add(iterator.next());
 				}
