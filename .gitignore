@@ -7,3 +7,6 @@ code/data/
 out/
 *out/
 *.class
+database.txt
+DiffFile.txt
+grams.txt

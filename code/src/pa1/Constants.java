@@ -5,9 +5,9 @@ import java.nio.file.Paths;
 
 public class Constants {
 
-	public static String DATABASE_FILE = "data/database.txt";
-	public static String DIFF_FILE = "data/DiffFile.txt";
-    public static String GRAMS_FILE = "data/grams.txt";
+	public static String DATABASE_FILE = "database.txt";
+	public static String DIFF_FILE = "DiffFile.txt";
+    public static String GRAMS_FILE = "grams.txt";
   
     
     public static int[] BITS_PER_ELEMENT = { 4, 8, 10 };

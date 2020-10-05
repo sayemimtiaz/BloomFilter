@@ -13,7 +13,7 @@ import java.util.stream.Stream;
 
 public class EmpiricalComparision {
 	//selects a particular key from GRAM_FILE with 1/10000 probability to use as an key
-	Pair queryKeySelectionProbability =  new Pair(1,50000);
+	Pair queryKeySelectionProbability =  new Pair(1,500000);
 
 	BaseDifferential [] differentials;
 	int numDifferentials = 5;
