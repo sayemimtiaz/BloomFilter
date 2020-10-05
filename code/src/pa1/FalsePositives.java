@@ -28,9 +28,9 @@ public class FalsePositives {
 
     public static void main(String[] args) throws Exception {
 
-        for (int bits : Constants.BITS_PER_ELEMENT_ARRAY) {
+        for (int bits : Constants.BITS_PER_ELEMENT) {
             float expectedRate = expectedRate(bits);
-            for (int n : Constants.SET_SIZE_ARRAY) {
+            for (int n : Constants.SET_SIZE) {
                 System.out.println("Trial: set size = " + n + " and bits per element = " + bits);
                 System.out.println("Expected false positive rate: "+ expectedRate);
                 FalsePositives falsePositives = new FalsePositives(n, bits);

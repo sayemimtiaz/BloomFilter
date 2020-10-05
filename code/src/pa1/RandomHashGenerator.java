@@ -15,16 +15,16 @@ public class RandomHashGenerator extends BaseHashGenerator {
 
     private long x;
 
-    RandomHashGenerator(int size, int filterSize) {
+    RandomHashGenerator(int numHashes, int filterSize) {
 
 //        PRIME = nextPrime(filterSize);
-        this.k=size;
-        a = new long[size];
-        b = new long[size];
+        this.k=numHashes;
+        a = new long[numHashes];
+        b = new long[numHashes];
 
         Random rand = new Random();
 
-        for (int i = 0; i < size; i++) {
+        for (int i = 0; i < numHashes; i++) {
             a[i] = getCoefficient(rand);
             b[i] = getCoefficient(rand);
         }
@@ -40,11 +40,6 @@ public class RandomHashGenerator extends BaseHashGenerator {
 
     @Override
     public void init(String s) {
-//        x=0;
-//        for(int i=0;i<s.length();i++)
-//        {
-//            x=(x+( ((int) (Math.pow(10, i))%PRIME) * (s.charAt(i)-'a'))%PRIME)%PRIME;
-//        }
         x=s.hashCode();
     }
 

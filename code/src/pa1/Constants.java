@@ -10,9 +10,9 @@ public class Constants {
     public static String GRAMS_FILE = "data/grams.txt";
   
     
-    public static int[] BITS_PER_ELEMENT_ARRAY = { 4, 8, 10 };
+    public static int[] BITS_PER_ELEMENT = { 4, 8, 10 };
 
-    public static int[] SET_SIZE_ARRAY = {
+    public static int[] SET_SIZE = {
         20000, 30000, 40000, 50000
     };
 }

@@ -1,0 +1,21 @@
+Number of queries: 52
+Average time taken by BloomFilterFNV: 2098.519230769231
+Average time taken by BloomFilterRan: 2079.3653846153848
+Average time taken by MultiMultiBloomFilter: 2127.019230769231
+Average time taken by NaiveBloomFilter: 2182.403846153846
+Average time taken by NaiveDifferential: 4086.6923076923076
+
+Number of queries: 114
+Average time taken by BloomFilterFNV: 2057.7368421052633
+Average time taken by BloomFilterRan: 2066.254385964912
+Average time taken by MultiMultiBloomFilter: 2075.245614035088
+Average time taken by NaiveBloomFilter: 2066.4736842105262
+Average time taken by NaiveDifferential: 4039.877192982456
+
+
+Number of queries: 266
+Average time taken by BloomFilterFNV: 1967.454887218045
+Average time taken by BloomFilterRan: 1962.1278195488721
+Average time taken by MultiMultiBloomFilter: 1965.6052631578948
+Average time taken by NaiveBloomFilter: 1961.3496240601503
+Average time taken by NaiveDifferential: 3848.402255639098
